@@ -3,6 +3,8 @@ Case Study: Task 1
 
 The goal of this task is to build a model to classify iris species.
 
+[General report for this task is available from here](reports/Report)
+
 Project Organization
 ------------
 
@@ -18,7 +20,7 @@ Project Organization
     ├── notebooks          <- Jupyter notebooks.
     │
     │
-    ├── reports            <- Generated analysis.
+    ├── reports            <- Generated analysis. And the final report.
     │   └── figures        <- Generated figures.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
