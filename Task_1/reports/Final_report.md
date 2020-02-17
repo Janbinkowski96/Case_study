@@ -65,7 +65,7 @@
     significance differences between samples.
     
     It is important to note that despite the similar cv scores. Models make mistakes in a different way, 
-    differing in the occurrence of false positive (FP) (showed by precision) and false negative (FN) showed by recall.
+    differing in the occurrence of false positive (FP, showed by precision) and false negative (FN, showed by recall).
     Metrics for each class of target values are available from [classification report](General_Models_Metrics.txt). 
     The highest average of F1 (weighted average of the precision and recall) has LR model.
     
