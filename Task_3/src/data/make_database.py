@@ -42,26 +42,29 @@ def create_tables(cursor):
 def get_tables_from_file():
     """Function to load tables from file"""
     tables_list = os.listdir("tables_raw_format")
-    raw_inserts = []
+    raw_inserts = {}
 
     for table in tables_list:
         insert = pd.read_csv("tables_raw_format/{}".format(table)).values.tolist()
-        raw_inserts.append(insert)
+
+        table_name = table.split(".")[0]
+        raw_inserts.update({table_name: insert})
 
     return raw_inserts
 
 
-def fill_tables(students_insert, exam_results_insert, class_catalogue_insert, cursor, connection):
+def fill_tables(cursor, connection, students=None, exam_results=None,
+                class_catalogue=None):
     """Function to fill tables"""
 
     cursor.executemany("""INSERT INTO students 
-    (student_id, name, surname, birth_date, faculty) VALUES (?, ?, ?, ?, ?)""", students_insert)
+    (student_id, name, surname, birth_date, faculty) VALUES (?, ?, ?, ?, ?)""", students)
 
     cursor.executemany("""INSERT INTO exam_results 
-    (student_id, class_id, exam_date, grade) VALUES (?, ?, ?, ?)""", exam_results_insert)
+    (student_id, class_id, exam_date, grade) VALUES (?, ?, ?, ?)""", exam_results)
 
     cursor.executemany("""INSERT INTO class_catalogue 
-    (class_id, class_name, professor_id, semester) VALUES (?, ?, ?, ?)""", class_catalogue_insert)
+    (class_id, class_name, professor_id, semester) VALUES (?, ?, ?, ?)""", class_catalogue)
 
     connection.commit()
 
@@ -70,4 +73,4 @@ if __name__ == '__main__':
     curr, conn = connect()
     create_tables(curr)
     raw_insert = get_tables_from_file()
-    fill_tables(*raw_insert, curr, conn)
+    fill_tables(curr, conn, **raw_insert)
