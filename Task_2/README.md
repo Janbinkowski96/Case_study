@@ -12,7 +12,7 @@ Project Organization
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   │   │
-    │   │   │── distilBERT_output <- packages with data to train finall model
+    │   │   │── distilBERT_output <- packages with data to train final model
     │   │
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original data.
@@ -23,9 +23,7 @@ Project Organization
     ├── notebooks          <- Jupyter notebooks.
     │
     │
-    ├── reports            <- Generated analysis.
-    │   └── figures        <- Generated graphics and figures to be used in reporting.
-    │
+    ├── reports            <- Generated analysis.    │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment.
 
 
