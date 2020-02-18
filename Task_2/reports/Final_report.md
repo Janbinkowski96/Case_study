@@ -22,10 +22,10 @@ method to reduce probability of over-fitting.**
     corresponding labels (sarcastic - 1, not sarcastic - 0) were merged into the full data set, which was split 
     into 70% training set and 30% test set.
 
-5) Random forest classifier was fitted to train set, then evaluated using [classification reports](../reports/model_metrics.txt). 
+5) Random forest classifier was fitted to train set, then evaluated using classification reports.
    Models was saved into [file](../models/classifier). 
    
-6) Trained model [metrics](../reports/model_metrics.txt) were compared with the dummy model.
+6) Trained model [metrics](../reports/model_metrics.txt) were compared with the dummy model [metrics](../reports/dummy_model_metrics.txt).
 
 #### Result  
 
