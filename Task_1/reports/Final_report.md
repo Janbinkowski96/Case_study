@@ -9,8 +9,8 @@
              features do not look like standard normally distributed data.
         2.3) Processed data set was split into 70% train set and 30% test set.
         2.4) A couple of models are build and optimized using GridSearchCV function. Investigation of prediction 
-             skills of models differing in hyperparameters such as type and strength of regularization, number of 
-             trees / k-neighbors, type of "kernel tricks" or type of distance metric. Will allow choosing the 
+             skills of models (differing in hyperparameters such as type and strength of regularization, number of 
+             trees / k-neighbors, type of "kernel tricks" or type of distance metric) will allow choosing the 
              optimal model (s) used for prediction.
     
         Used models and range of hyperparameters:
@@ -57,20 +57,21 @@
     Models were evaluated, it was observed that all of them have similar general accuracy 
     from **93% - 96%** and mean of cross-validation (cv) scores **96% - 98%**. The mean and distribution of 
     cv scores visualised on plot bellow.![plot](figures/box_plot_cross_validation_scores.png) It was noted that 
-    SVM and KNN estimators have smaller inter-quartile range than others estimators. It indicate that 
+    SVM and LR estimators have smaller inter-quartile range than others estimators. It indicate that 
     SVM and KNN retain more stable results, when they are training and testing on different folds of training-set.
-    It lets think that in future validation tests these estimators will keep their results at similar level. 
-    Distribution of cv scores between samples (models) was tested, because all of the sets with cv scores for each 
-    models have no normal distribution, testing was performed using no-parametric test. There were no statistically 
+    It may mean that in future validation-tests, these estimators will keep their metrics at similar level. 
+    Distribution of cv scores between samples (models) was tested, because not all of the sets with cv scores for each 
+    models have normal distribution, testing was performed using no-parametric test. There were no statistically 
     significance differences between samples.
     
-    It is important to note that despite the similar cv scores. Models make mistakes in a different way, 
-    differing in the occurrence of false positive (FP, showed by precision) and false negative (FN, showed by recall).
+    It is important to note that despite the similar cv scores. Models make mistakes miscellaneous, proof of that 
+    are different occurrence of false positive (FP, showed by precision) and false negative (FN, showed by recall) 
+    results.
     Metrics for each class of target values are available from [classification report](General_Models_Metrics.txt). 
     The highest average of F1 (weighted average of the precision and recall) has LR model.
     
     The highest value of Area Under the ROC have LR and SVM models but they differed in precision and recall,
     they were used to create voting classifier with soft system (in case of two estimators majority voting may not work). 
-    The metrics of voting classifier does not increase, but it still can be more useful in case of 
-    larger test data sets.
+    The metrics of voting classifier does not increase, but model still can be more useful in case of 
+    new test data sets.
     
