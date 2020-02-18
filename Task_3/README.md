@@ -30,13 +30,16 @@ Project Organization
 ------------
 
     ├── README.md          <- README.
-    ├── database           <- Database location [empty on remote repository]
+    ├── database           <- Database location [empty on remote repository].
     │
+    ├── notebooks          <- Jupyter notebooks.
     ├── reports            <- Generated analysis.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment.
     │
     ├── src                <- Source code for use in this project.
+        │
+        │── send_query.py <- Scripts to send query and save output to ../reports/query_result.html.
         │
         ├── data           <- Scripts to generate data.
              └── make_database.py <- Scripts to generate data base in ../../database/ location.
