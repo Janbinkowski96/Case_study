@@ -32,10 +32,12 @@ method to reduce probability of over-fitting.**
 Trained model has 80% accuracy, weighted average of F1 = 0.8. 
 
 For class sarcastic - 1:
+
     * frequency of false positive values = 19% (1 - precision)
     * frequency of false negative values = 29% (1 - recall)
     
 For class not sarcastic - 0:
+
     * frequency of false positive values = 20% (1 - precision)
     * frequency of false negative values = 13% (1 - recall)
     
