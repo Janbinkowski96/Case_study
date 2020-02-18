@@ -69,7 +69,7 @@
     Metrics for each class of target values are available from [classification report](General_Models_Metrics.txt). 
     The highest average of F1 (weighted average of the precision and recall) has LR model.
     
-    The highest value of Area Under the ROC, and F1 have LR and SVM models but they differed in precision and recall,
+    The highest value of Area Under the ROC have LR and SVM models but they differed in precision and recall,
     they were used to create voting classifier with soft system (in case of two estimators majority voting may not work). 
     The metrics of voting classifier does not increase, but it still can be more useful in case of 
     larger test data sets.
