@@ -2,6 +2,20 @@ Case Study: Task 1
 ==============================
 
 The goal of this task is to build a model to classify iris species.
+### How to run
+If the requirements for the python and jupyter notebook versions are done, to run 
+notebooks you need to install [requirements](requirements.txt) using pip3 or conda.
+
+        pip3 install -r requirements.txt
+        conda install --file requirements.txt
+
+When requirements are collected, you can use notebooks, the flow of work is:
+1) [Pre-processing](notebooks/Preprocessing.ipynb)
+2) [Standarization](notebooks/Standardization.ipynb)
+3) [Training](notebooks/Training_models.ipynb)
+4) [Models evaluation](notebooks/Models_evalutaion_and_comparison.ipynb)
+
+The interim and processed data, models, metrics and figures are generated during notebooks work.
 
 [General report for this task is available from here](reports/Final_report.md)
 

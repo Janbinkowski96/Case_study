@@ -3,11 +3,28 @@ Case study: task 3
 
 The goal is to write a SQL query, in which you will retrieve the information about the students who scored a 4 and above on their algebra exam.
 
-**To create database run make_database.py script in project directory.**
+If the requirements for the python and jupyter notebook versions are done, to run 
+code you need to install [requirements](requirements.txt) using pip3 or conda.
 
-        python3 src/data/make_database.py
+        pip3 install -r requirements.txt
+        conda install --file requirements.txt
+
+When requirements are collected, you can use notebooks and scripts, the flow of work is:
+1) create database by run [make_database.py](src/data/make_database.py) script in project directory.
+
+        1.1) cd src/data 
+        2.2) python3 make_database.py
+        or use && to join 2.1 and 2.2 elements (for linux)
+
+2) to send a query you can use [script](src/send_query.py) or [notebook](notebooks/SQL_Querry.ipynb). To use script
+as above, open directory and run script.
+
+        2.1) cd src/
+        2.2) python3 send_query.py
+
 
 Final report is available from [here](reports/Final_report.md).
+Query result is available from [here](reports/query_result.html)
 
 Project Organization
 ------------
