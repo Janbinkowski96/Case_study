@@ -3,27 +3,29 @@
 The goal of project was to build classifier to recognize sarcastic or not sarcastic headline content.
 
 
-**To tokenize and extract information from sentence was carried out using (pre-trained) distilBERT 
-(smaller and faster version of BERT). Predictive model was created using random forest classifier**
+**Tokenizing and extracting information from sentence was carried out using (pre-trained) distilBERT 
+(a smaller and faster version of BERT). The predictive model was created using random forest classifier using boostrap
+method to reduce probability of over-fitting**
 
-1) At firs data was loaded, the sentences were processed using DistilBertTokenizer into word and sub-words, 
-   CLS and SEP tokens were added, then tokens were converted to numerical values to format supported by BERT.
+1) At first data was loaded, the sentences were processed into word and sub-words, 
+   CLS and SEP tokens were added, then tokens were converted to numerical values to format supported by BERT 
+   using DistilBertTokenizer.
   
-2) The tokenized sentences need to be the same length, differences in number of tokens were filled using 0.
+2) The tokenized sentences need to be the same length, differences in a number of tokens were filled using 0.
 
-3) Because of optimization problems, data was slitted into smaller packages, the process of enter data into
+3) Because of optimization problems, data was slitted into smaller packages, the process of entering data into
    distilBERT was carried out in google cloud instance. The results was 3-D matrix, for classification 
-   problems only CLS tokens for all sentence are needed. The matrix size is [number_of_sentence x 768], where 768 is 
+   problems only CLS tokens for all sentence are needed. The matrix size after reduction is [number_of_sentence x 768], where 768 is 
    number of hidden layers of distilBERT. Processed by distilBERT sets of data were saved as *.npy files.
    
 4) [*.npy files](../data/interim/distilBERT_output) containing extracted information from sentences and 
-    corresponding label (sarcastic - 1, not sarcastic - 0) were merged into full data set, which was split 
+    corresponding labels (sarcastic - 1, not sarcastic - 0) were merged into the full data set, which was split 
     into 70% training set and 30% test set.
 
 5) Random forest classifier was fitted to train set, then evaluated using [classification reports](../reports/model_metrics.txt). 
    Models was saved into [file](../models/classifier). 
    
-6) Trained model [metrics](../reports/model_metrics.txt) were compared with dummy model.
+6) Trained model [metrics](../reports/model_metrics.txt) were compared with the dummy model.
 
 #### Result  
 
