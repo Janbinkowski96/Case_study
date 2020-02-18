@@ -5,7 +5,7 @@ The goal of project was to build classifier to recognize sarcastic or not sarcas
 
 **Tokenizing and extracting information from sentence was carried out using (pre-trained) distilBERT 
 (a smaller and faster version of BERT). The predictive model was created using random forest classifier using boostrap
-method to reduce probability of over-fitting**
+method to reduce probability of over-fitting.**
 
 1) At first data was loaded, the sentences were processed into word and sub-words, 
    CLS and SEP tokens were added, then tokens were converted to numerical values to format supported by BERT 
