@@ -11,8 +11,9 @@
    about the students who scored a 4 and above on their algebra exam. Available from [here](Task_3), 
    final report is [here](Task_3/reports/Final_report.md).
    
-    
-
-
-
- 
+   To run tasks locally you need, and appropriate permissions:
+        
+        * Python 3.6.8
+        * Jupyter notebook 4.4.0
+   
+   additional information about how-to-run tasks and requirements are in Task`s README.md.
