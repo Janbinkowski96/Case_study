@@ -11,6 +11,9 @@ Project Organization
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
+    │   │   │
+    │   │   │── distilBERT_output <- packages with data to train finall model
+    │   │
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original data.
     │
