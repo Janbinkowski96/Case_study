@@ -2,6 +2,7 @@ Case Study: Task 2
 ==============================
 
 Aim of this task is to create binary classification model for headline type (sarcastic / not sarcastic) based on headline content.
+Final report is available form [here](reports/Final_report.md)
 
 Project Organization
 ------------
@@ -18,12 +19,12 @@ Project Organization
     │   └── raw            <- The original data.
     │
     │
-    ├── models             <- Trained models.
+    ├── models             <- Trained model.
     │
     ├── notebooks          <- Jupyter notebooks.
     │
     │
-    ├── reports            <- Generated analysis.    │
+    ├── reports            <- Generated analysis.
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment.
 
 
