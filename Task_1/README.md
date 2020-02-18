@@ -3,7 +3,7 @@ Case Study: Task 1
 
 The goal of this task is to build a model to classify iris species.
 
-[General report for this task is available from here](reports/Report)
+[General report for this task is available from here](reports/Final_report.md)
 
 Project Organization
 ------------

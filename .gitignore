@@ -58,6 +58,11 @@ target/
 
 # DotEnv configuration
 Task_1/.env
+Task_2/.env
+Task_3/.env
+
+# data
+Task_2/data/processed/Graduate - HEADLINES dataset (2019-06)_TO_TRAINING.json
 
 # Database
 *.db
