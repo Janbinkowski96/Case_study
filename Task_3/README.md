@@ -1,10 +1,13 @@
 Case study: task 3
 ==============================
 
-Write a SQL query, in which you will retrieve the information about the students who scored a 4 and above on their algebra exam.
+The goal is to write a SQL query, in which you will retrieve the information about the students who scored a 4 and above on their algebra exam.
+
 **To create database run make_database.py script in project directory.**
 
         python3 src/data/make_database.py
+
+Final report is available from [here](reports/Final_report.md).
 
 Project Organization
 ------------
