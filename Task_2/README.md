@@ -9,7 +9,7 @@ Project Organization
 
 
 
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md          <- README.
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   │   │
